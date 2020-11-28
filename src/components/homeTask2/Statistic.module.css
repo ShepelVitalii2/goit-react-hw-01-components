@@ -1,0 +1,42 @@
+.statistics {
+  width: 350px;
+  justify-content: center;
+  margin: 25px auto 25px auto;
+  background-color: aquamarine;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.title {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  padding-top: 15px;
+  font-size: 25px;
+}
+
+.statList {
+  width: 73px;
+  display: flex;
+  padding: 0px;
+}
+
+.item {
+  color: aquamarine;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 5px 13px 8px 13px;
+  width: 100%;
+}
+
+.label {
+  padding: 10px;
+  padding-top: 10px;
+  font-size: 13px;
+}
+
+.percentage {
+  padding-top: 10px;
+  font-size: 13px;
+}
