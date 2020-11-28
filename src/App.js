@@ -12,16 +12,16 @@ import Section from './components/Section';
 export default function App() {
   return (
     <div>
-      <Section title="Дз№1">
+      <Section title="Дз#1">
         <UserItem item={user} />
       </Section>
-      <Section title="Дз№2">
+      <Section title="Дз#2">
         <StatisticItem stats={statistic} />
       </Section>
-      <Section title="Дз№3">
+      <Section title="Дз#3">
         <FriendsItem friends={friends} />
       </Section>
-      <Section title="Дз№4">
+      <Section title="Дз#4">
         <TransactionItems items={transaction} />
       </Section>
     </div>
