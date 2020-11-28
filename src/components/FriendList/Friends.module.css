@@ -4,7 +4,7 @@
   margin: auto auto;
 }
 
-.friendItem {
+.friendListItem {
   display: flex;
   align-items: center;
   height: 100px;
@@ -13,7 +13,7 @@
   box-shadow: 8px 7px 20px -2px #000000;
   border-radius: 5px;
 }
-.friendItem:not(:last-of-type) {
+.friendListItem:not(:last-of-type) {
   margin-bottom: 15px;
 }
 

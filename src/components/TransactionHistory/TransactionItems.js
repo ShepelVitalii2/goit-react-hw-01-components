@@ -14,13 +14,11 @@ function TransactionItem({ items }) {
       </thead>
       <tbody>
         {items.map(item => (
-          <tr key={item.id}>
-            <Transaction
-              type={item.type}
-              amount={item.amount}
-              currency={item.currency}
-            />
-          </tr>
+          <Transaction
+            type={item.type}
+            amount={item.amount}
+            currency={item.currency}
+          />
         ))}
       </tbody>
     </table>

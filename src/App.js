@@ -1,29 +1,29 @@
-import UserItem from './components/homeTask1/UserItem';
-import user from './components/homeTask1/user.json';
-import StatisticItem from './components/homeTask2/StatisticItem';
-import statistic from './components/homeTask2/statistic.json';
-import FriendsItem from './components/homeTask3/FriendsItem';
-import friends from './components/homeTask3/friends.json';
-import transaction from './components/homeTask4/transaction.json';
-import TransactionItems from './components/homeTask4/TransactionItems';
+import Profile from './components/Profile/Profile';
+import profile from './components/Profile/user.json';
+import StatisticItem from './components/Statistics/StatisticItem';
+import statistic from './components/Statistics/statistic.json';
+import FriendsList from './components/FriendList/FriendsItem';
+import friends from './components/FriendList/friends.json';
+import transaction from './components/TransactionHistory/transaction.json';
+import TransactionItems from './components/TransactionHistory/TransactionItems';
 
 import Section from './components/Section';
 
 export default function App() {
+  const { name, tag, location, avatar, stats } = profile;
+
   return (
-    <div>
-      <Section title="Дз#1">
-        <UserItem item={user} />
-      </Section>
-      <Section title="Дз#2">
-        <StatisticItem stats={statistic} />
-      </Section>
-      <Section title="Дз#3">
-        <FriendsItem friends={friends} />
-      </Section>
-      <Section title="Дз#4">
-        <TransactionItems items={transaction} />
-      </Section>
-    </div>
+    <Section>
+      <Profile
+        name={name}
+        tag={tag}
+        location={location}
+        avatar={avatar}
+        stats={stats}
+      />
+      <StatisticItem title="Upload stats" stats={statistic} />
+      <FriendsList friends={friends} />
+      <TransactionItems items={transaction} />
+    </Section>
   );
 }
