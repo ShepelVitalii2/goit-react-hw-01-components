@@ -1,6 +1,5 @@
 import Transaction from './Transaction';
 import s from './Transaction.module.css';
-import PropTypes from 'prop-types';
 
 function TransactionItem({ items }) {
   return (
@@ -12,25 +11,9 @@ function TransactionItem({ items }) {
           <th className={s.title}>Currency</th>
         </tr>
       </thead>
-      <tbody>
-        {items.map(item => (
-          <Transaction
-            type={item.type}
-            amount={item.amount}
-            currency={item.currency}
-          />
-        ))}
-      </tbody>
+      <tbody>{items.map(Transaction)}</tbody>
     </table>
   );
 }
-
-TransactionItem.propTypes = {
-  items: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.string.isRequired,
-    }),
-  ),
-};
 
 export default TransactionItem;

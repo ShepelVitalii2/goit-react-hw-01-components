@@ -14,6 +14,7 @@ Transaction.propTypes = {
   type: PropTypes.string.isRequired,
   amount: PropTypes.string.isRequired,
   currency: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
 };
 
 export default Transaction;
